@@ -33,10 +33,16 @@ students
 end
 def print(students)
   students.each do |student|
-    puts "#{student[:name]} (#{student[:cohort]} cohort)"
+    puts "#{index + 1}. #{student[:name]} (#{student[:cohort]} cohort)"
   end
 end
 students = input_students
 print_header
 print(students)
 print_footer(students)
+=begin
+here I have made a multi line comment which I am using to show my progress
+through the student directory exercises.
+8.1 - By adding in {index + 1}. it will show the number index +1 for example,
+doctor hanibal lecter would give us a 1, becasue its index number is 0.
+=end
