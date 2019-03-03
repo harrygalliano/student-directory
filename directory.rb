@@ -33,7 +33,7 @@ students
 end
 def print(students)
   students.each do |student|
-    puts "#{student[:name]} (#{student[:cohort]} cohort)" if student[:name].start_with?("J")
+    puts "#{student[:name]} (#{student[:cohort]} cohort)" if student[:name].size < 12
   end
 end
 students = input_students
@@ -45,7 +45,9 @@ here I have made a multi line comment which I am using to show my progress
 through the student directory exercises.
 8.1 - By adding in {index + 1}. it will show the number index +1 for example,
 doctor hanibal lecter would give us a 1, becasue its index number is 0.
-8.2 - by adding if student[:name].start_with?("J")to the end of my puts section
+8.2 - By adding if student[:name].start_with?("J")to the end of my puts section
 this will make it so only names that start with the letter J are putsed, this
 would only give Joffrey Baratheon.
+8.3 - By using if student[:name].size < 12 only names shoter than 12 characters
+will be returned.
 =end
